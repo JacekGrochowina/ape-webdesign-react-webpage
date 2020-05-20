@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/react';
 import Button from './Button';
 
 storiesOf('Atoms/Button', module)
-  .add('Normal', () => <Button>Hello Roman</Button>)
-  .add('Secondary', () => <Button secondary>Hello Roman</Button>);
+  .add('Normal', () => <Button>Hello World</Button>)
+  .add('Secondary', () => <Button secondary>Hello World</Button>);

@@ -1,8 +1,11 @@
 import React from 'react';
 
+// Components
+  import Button from 'components/atoms/Button';
+
 const App = () => (
   <div className="App">
-    <h1>Hello World!</h1>
+    <Button>Hello World!</Button>
   </div>
 )
 
