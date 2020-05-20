@@ -4,4 +4,5 @@ import Heading from './index';
 
 storiesOf('Atoms/Heading', module)
   .add('Normal', () => <Heading>Hello World</Heading>)
-  .add('Secondary', () => <Heading secondary>Hello World</Heading>);
+  .add('Secondary', () => <Heading secondary>Hello World</Heading>)
+  .add('Card', () => <Heading card>Hello World</Heading>);
