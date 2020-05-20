@@ -12,6 +12,14 @@ const Heading = styled.h1`
         text-transform: uppercase;
         font-size: ${({ theme }) => theme.fontSize.m};
     `}
+
+    ${({ card }) =>
+        card  &&
+        css`
+        text-transform: uppercase;
+        font-family: ${({ theme }) => theme.fontFamily.leading};
+        font-size: ${({ theme }) => theme.fontSize.s};
+    `}
 `;
 
 export default Heading;
