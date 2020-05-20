@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import iconCheck from 'assets/icons/iconCheck.svg';
 
 const Item = styled.li`
@@ -38,6 +38,21 @@ const Item = styled.li`
         background-position: center;
         background-size: contain;
     }
+
+    ${({ card }) =>
+    card &&
+    css`
+        font-family: ${({ theme }) => theme.fontFamily.leading};
+        font-size: ${({ theme }) => theme.fontSize.xs};
+        color: ${({ theme }) => theme.color.gray};
+        list-style: none;
+        border-bottom: 1px solid ${({ theme }) => theme.color.light};
+        padding: 10px 20px;
+        text-align: center;
+        ::before {
+            content: none;
+        }
+    `}
 `;
 
 export default Item;
