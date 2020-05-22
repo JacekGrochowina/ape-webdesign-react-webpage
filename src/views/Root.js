@@ -16,7 +16,9 @@ import iconMapMarker from 'assets/icons/iconMapMarker.svg';
   import Heading from 'components/atoms/Heading';
   import Paragraph from 'components/atoms/Paragraph';
   import Item from 'components/atoms/Item';
+  import { LinkExternal, Link } from 'components/atoms/Link';
   import Price from 'components/atoms/Price';
+  import Brand from 'components/atoms/Brand';
   import Card from 'components/molecules/Card';
 
 const App = () => (
@@ -68,7 +70,7 @@ const App = () => (
           <br/>
           <br/>
           <Row>
-            <Col>
+            <Col lg={4}>
               <Card offertName="standardowa" price={799}>
                 <Item card>onepage / 0 podstron</Item>
                 <Item card>1 płatna grafika</Item>
@@ -79,7 +81,7 @@ const App = () => (
                 <Item card>Hosting & domena gratis</Item>
               </Card>
             </Col>
-            <Col>
+            <Col lg={4}>
               <Card focus offertName="standardowa" price={799}>
                 <Item card>onepage / 0 podstron</Item>
                 <Item card>1 płatna grafika</Item>
@@ -90,7 +92,7 @@ const App = () => (
                 <Item card>Hosting & domena gratis</Item>
               </Card>
             </Col>
-            <Col>
+            <Col lg={4}>
               <Card offertName="standardowa" price={799}>
                 <Item card>onepage / 0 podstron</Item>
                 <Item card>1 płatna grafika</Item>
@@ -102,7 +104,32 @@ const App = () => (
               </Card>
             </Col>
           </Row>
-
+          <br/>
+          <br/>
+          <LinkExternal to={"http://jacekcv.com/"}>Lorem ipsum</LinkExternal>
+          <br/>
+          <LinkExternal to={"http://jacekcv.com/"} blank>Lorem ipsum</LinkExternal>
+          <br/>
+          <Link to={"/test"}>Lorem ipsum</Link>
+          <br/>
+          <br/>
+          <Paragraph>Copyright © 2020 APE WebDesign - Projektowanie stron www</Paragraph>
+          <br/>
+          <br/>
+          <Brand logo/>
+          <br/>
+          <br/>
+          <Brand logotype/>
+          <br/>
+          <br/>
+          <Row>
+            <Col xs={6}>
+              <Brand logotype/>
+            </Col>
+          </Row>
+          
+          <br/>
+          <br/>
         </Container>
 
         {/* <Switch>
