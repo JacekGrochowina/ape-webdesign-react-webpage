@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     padding: 60px 50px;
     text-align: center;
     border: 1px solid ${({ theme }) => theme.color.light};
+    margin-bottom: 30px;
     transition-property: box-shadow;
     transition-duration: 0.25s;
     :hover {
