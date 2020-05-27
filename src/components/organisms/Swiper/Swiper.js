@@ -20,9 +20,8 @@ const SwiperComponent = ({ children }) => {
     }
 
     const Slides = children.map(element =>
-        <div>
+        <div key={element.key}>
             <Slide
-                key={element.key}
                 title={element.title}
                 description={element.description}
                 bgImg={element.bgImg}

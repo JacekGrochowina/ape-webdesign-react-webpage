@@ -1,12 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HamburgerSpin } from 'react-animated-burgers';
 import gsap from 'gsap';
-import routes from 'routes';
-
-import { Container, Row, Col } from 'react-bootstrap';
-
 import Brand from 'components/atoms/Brand';
 import List from 'components/atoms/List';
 

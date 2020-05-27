@@ -57,12 +57,7 @@ const Home = () => {
         <div className="home">
             <Swiper>{data.swiper}</Swiper>
             <AboutUs />
-            <Parallax
-                    blur={0}
-                    bgImage={Video}
-                    bgImageAlt="webdesign video"
-                    strength={500}
-                >
+            <Parallax>
                 <Video />
             </Parallax>
             <TilesList />

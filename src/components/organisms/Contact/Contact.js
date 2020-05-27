@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Section from 'components/atoms/Section';
 import List from 'components/atoms/List';
 import Item from 'components/atoms/Item';
