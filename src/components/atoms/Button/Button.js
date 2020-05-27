@@ -11,6 +11,9 @@ const Button = styled.button`
     letter-spacing: 2px;
     border: 3px solid ${({ theme }) => theme.color.leading};
     cursor: pointer;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0);
+    transition-property: box-shadow;
+    transition-duration: 0.25s;
 
     ${({ secondary }) =>
         secondary &&
@@ -19,6 +22,10 @@ const Button = styled.button`
         background-color: transparent;
         border: 3px solid ${({ theme }) => theme.color.leading};
     `}
+
+    :hover {
+        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
+    }
 `;
 
 export default Button;

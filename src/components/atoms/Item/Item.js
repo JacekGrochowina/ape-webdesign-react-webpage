@@ -53,6 +53,35 @@ const Item = styled.li`
             content: none;
         }
     `}
+
+    ${({ numbering }) =>
+    numbering &&
+    css`
+        font-family: ${({ theme }) => theme.fontFamily.leading};
+        color: ${({ theme }) => theme.color.gray};
+        list-style: decimal-leading-zero;
+        list-style-position: inside;
+        padding: 5px 20px;
+        margin-top: 10px;
+        border-top: 1px solid  ${({ theme }) => theme.color.light};
+        ::before {
+            content: none;
+        }
+    `}
+
+    ${({ circle }) =>
+    circle &&
+    css`
+        font-family: ${({ theme }) => theme.fontFamily.leading};
+        color: ${({ theme }) => theme.color.gray};
+        list-style: circle;
+        list-style-position: inside;
+        margin-left: 25px;
+        padding: 0 20px;
+        ::before {
+            content: none;
+        }
+    `}
 `;
 
 export default Item;

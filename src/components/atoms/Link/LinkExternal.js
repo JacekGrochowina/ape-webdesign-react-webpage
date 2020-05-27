@@ -7,6 +7,7 @@ const StyledLinkExternal = styled.a`
     text-decoration: none;
     :hover {
         text-decoration: underline;
+        color: ${({ theme }) => theme.color.gray};
     }
 `;
 
