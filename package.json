@@ -1,5 +1,6 @@
 {
-  "name": "react-app-theme",
+  "homepage": "http://webdesign.apepw.pl/",
+  "name": "ape-webdesign",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
